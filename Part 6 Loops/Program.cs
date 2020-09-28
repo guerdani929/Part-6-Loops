@@ -7,26 +7,52 @@ using System.Threading.Tasks;
 namespace Part_6_Loops
 {
     class Program
-    {
+    {   
         static void Main(string[] args)
         {
+            int min;
+            int max;
+            int Inbetween;
 
 
-            //for (int i = 1; i < 10; i++)
+            Console.WriteLine("Please enter a minimum value:");
+            min = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Please enter a maximum value:");
+            max = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Please enter an integer that's inbetween your minimum and maximum values:");
+            Inbetween = Convert.ToInt32(Console.ReadLine());
+            // do
             //{
-            //    Console.WriteLine("Hello! ");
-            //}
 
-            int i = 10;
-            while (i <= 1)
+            // Console.WriteLine("Please enter an integer that's inbetween your minimum and maximum values:");
+            // Inbetween = Convert.ToInt32(Console.ReadLine());
+
+            //} while (Inbetween < MinInput);
+
+            while (Inbetween < min || Inbetween > max)
             {
-                Console.WriteLine(i);
-                i = i - 1;
+               
+                
+               Console.WriteLine("Please enter an integer that's inbetween your minimum and maximum values:");
+               Inbetween = Convert.ToInt32(Console.ReadLine());
+
+                
+                
+
+            }
+            
 
 
+            
+            Console.WriteLine($"{Inbetween} is in between the maximum and minimum values!");
 
+            Console.WriteLine("------------------------------------------------------------------------------------------------------------------------");
+         
 
-                Console.ReadLine();
+            Console.ReadLine();
+            
 
 
 
